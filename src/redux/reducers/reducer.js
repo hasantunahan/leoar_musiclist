@@ -1,13 +1,14 @@
 const INITIAL_STATE = {
-    data: { },
-    err: ''
+    data: '',
+    err: '',
+    isLoading: false
 }
 
 export const reducer = (state = INITIAL_STATE, action) => {
 
     switch (action.type) {
         case 'setMusicDataStart':
-            return { ...state, err: '', isLoading: true };
+            return { ...state, err: '', isLoading: true, data: 'hello' };
 
         case 'setMusicData':
             return { ...state, data: action.payload, isLoading: false };
