@@ -8,7 +8,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
 
     switch (action.type) {
         case 'setMusicDataStart':
-            return { ...state, err: '', isLoading: true, data: 'hello' };
+            return { ...state, err: '', isLoading: true };
 
         case 'setMusicData':
             return { ...state, data: action.payload, isLoading: false };
@@ -18,7 +18,6 @@ export const reducer = (state = INITIAL_STATE, action) => {
 
         default:
             return state;
-
     }
 
 }

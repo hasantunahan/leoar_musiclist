@@ -11,6 +11,11 @@ const musicstyle = props =>
     background :{
         backgroundColor : getColor().background,
         flex:1
+    },
+    loading :{
+        flex :1,
+        alignItems :'center',
+        justifyContent :'center'
     }
   });
 function musicStyle() {
