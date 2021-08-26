@@ -1,40 +1,19 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
   useColorScheme,
-  View,
 } from 'react-native';
-
+import {NavigationContainer} from '@react-navigation/native';
+import MusicList from './src/view/features/musicview/view/music';
 import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-
-
+  DarkTheme
+} from './src/core/init/theme/color/dark_theme_color';
+import { LightTheme } from './src/core/init/theme/color/light_theme_color';
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+  const scheme = useColorScheme();
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer theme={scheme === 'dark' ? DarkTheme : LightTheme}>
+      <MusicList />
+    </NavigationContainer>
   );
 };
 
