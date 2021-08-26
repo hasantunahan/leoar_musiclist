@@ -1,17 +1,16 @@
-import {useTheme} from '@react-navigation/native';
 import React from 'react';
-import {View, Text, Button, Alert} from 'react-native';
+import { View, Text, Button, Alert } from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 import AppHeader from '../../_header/view/header';
+import musicStyle from '../style/style';
 const MusicList = () => {
-  const {colors} = useTheme();
-  function setlog() {
-    console.log('easy');
-  }
+  const styles = musicStyle()
   return (
-    <View style={{flex: 1, backgroundColor: colors.background}}>
-      <AppHeader title="Choose Music" />
-      <Text>hello</Text>
-    </View>
+    <SafeAreaView style={styles.main}>
+      <View style={styles.background}>
+        <AppHeader title="Choose Music" />
+      </View>
+    </SafeAreaView>
   );
 };
 

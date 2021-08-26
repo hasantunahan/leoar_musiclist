@@ -1,28 +1,25 @@
-import {useTheme} from '@react-navigation/native';
+import { useTheme } from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import {getColor} from '../../../../core/app/extension/color';
-import {appBarHeight, getWidth} from '../../../../core/app/extension/dimension';
-import {lowPadding} from '../../../../core/app/extension/padding';
+import { Platform, StyleSheet } from 'react-native';
+import { get } from 'react-native/Libraries/Utilities/PixelRatio';
+import { getColor } from '../../../../core/app/extension/color';
+import { appBarHeight, getWidth } from '../../../../core/app/extension/dimension';
+import { lowPadding, normalPadding } from '../../../../core/app/extension/padding';
+import { isIOS } from '../../../../core/app/extension/platforms';
 const header = props =>
   StyleSheet.create({
     main: {
-      backgroundColor: getColor().background,
+      backgroundColor: getColor().card,
       height: appBarHeight(),
       width: getWidth(),
       alignItems: 'center',
-      justifyContent: 'center',
-      shadowColor: getColor().text,
-      shadowOffset: {
-        width: 20,
-        height: 0,
-      },
-      shadowOpacity: 0.5,
-      elevation: 5,
+      justifyContent: isIOS() ? 'flex-end' : 'center',
+      borderBottomColor: getColor().text,
+      borderBottomWidth: 0.2
     },
     row: {
       flexDirection: 'row',
-      padding: lowPadding(),
+      padding: normalPadding(),
       width: getWidth(),
       paddingLeft: 15,
       paddingRight: 15,
@@ -38,8 +35,8 @@ const header = props =>
     },
   });
 function headerStyle() {
-  const {colors} = useTheme();
-  const styles = React.useMemo(() => header({colors}), [colors]);
+  const { colors } = useTheme();
+  const styles = React.useMemo(() => header({ colors }), [colors]);
   return styles;
 }
 export default headerStyle;
