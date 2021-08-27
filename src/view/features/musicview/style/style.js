@@ -24,14 +24,10 @@ const musicstyle = props =>
       width: getWidth(),
       alignItems: 'center',
       justifyContent: 'center',
-      shadowColor: getColor().text,
-      shadowOffset: {
-        width: 2,
-        height: 20,
-      },
-      shadowOpacity: 0.43,
-      shadowRadius: 10.46,
-      elevation: 15,
+      shadowColor: '#000',
+      shadowOffset: {width: 1, height: 3},
+      shadowOpacity: 0.2,
+      elevation:10
     },
   });
 function musicStyle() {

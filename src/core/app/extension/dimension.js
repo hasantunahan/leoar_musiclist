@@ -9,5 +9,5 @@ export function getWidth() {
 }
 
 export function appBarHeight() {
-  return getHeight() * 0.07;
+  return getHeight() * 0.065;
 }

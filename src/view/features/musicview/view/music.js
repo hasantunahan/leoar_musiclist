@@ -10,10 +10,14 @@ import {
 } from '../../../../redux/actions/action';
 import {FlatList} from 'react-native-gesture-handler';
 import {appBarHeight} from '../../../../core/app/extension/dimension';
+import {CategoriesCard} from '../_components/music_categories_card/music_categories_card';
 
 const MusicList = props => {
+  const styles = musicStyle();
   const musicdata = useSelector(state => state.data);
   const [data, setData] = React.useState({});
+  const [selected, setSelected] = React.useState('');
+
   var list = Object.keys(data ?? {});
   var datalist = [];
   var taglist = new Set();
@@ -26,62 +30,13 @@ const MusicList = props => {
     setData(musicdata.data);
   }, [props.isLoading]);
 
-  /* function getCategoriesData() {
-    let list = Object.keys(data ?? {});
-    let datalist = [];
-    let taglist = new Set();
-    list.map(key => {
-      datalist.push(data[key]);
-    });
-    datalist.map(i => {
-      i.tags.map(tag => {
-        taglist.add(tag);
-      });
-    });
-    return ['All'].concat(Array.from(taglist));
-  } */
-
-  function getCategoriesData() {
-    list.map(key => {
-      let elm = data[key];
-      elm.key = key;
-      datalist.push(elm);
-    });
-    datalist.map(i => {
-      i.tags.map(tag => {
-        taglist.add(tag);
-      });
-    });
-    return ['All'].concat(Array.from(taglist));
-  }
-
-  function getItemsByCategory(text) {
-    let filtered = datalist.filter(i => i.tags.includes(text));
-    if (text == 'All') {
-      props.selectedCategories(datalist);
-    } else {
-      props.selectedCategories(filtered);
-    }
-  }
-
   const renderCategories = ({item}) => (
-    <TouchableOpacity
-      onPress={() => {
-        getItemsByCategory(item);
-      }}
-      style={{
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderBottomColor: 'black',
-        borderBottomWidth: 1,
-      }}>
-      <View>
-        <Text style={{padding: 10}}> {item}</Text>
-      </View>
-    </TouchableOpacity>
+    <CategoriesCard
+      selected={selected}
+      item={item}
+      callback={() => getItemsByCategory(item)}
+    />
   );
-
-  const styles = musicStyle();
 
   return (
     <SafeAreaView style={styles.main}>
@@ -102,11 +57,36 @@ const MusicList = props => {
               renderItem={renderCategories}
             />
           </View>
-          <Text>{JSON.stringify(props.categories)}</Text>
+          <Text>{JSON.stringify(selected ? props.categories : datalist)}</Text>
         </View>
       )}
     </SafeAreaView>
   );
+
+  function getCategoriesData() {
+    list.map(key => {
+      let elm = data[key];
+      elm.key = key;
+      datalist.push(elm);
+    });
+    datalist.map(i => {
+      i.tags.map(tag => {
+        taglist.add(tag);
+      });
+    });
+    return ['All'].concat(Array.from(taglist));
+  }
+
+  function getItemsByCategory(text) {
+    let filtered = datalist.filter(i => i.tags.includes(text));
+    if (text == 'All') {
+      setSelected(text);
+      props.selectedCategories(datalist);
+    } else {
+      setSelected(text);
+      props.selectedCategories(filtered);
+    }
+  }
 };
 
 const mapStateToProps = state => {

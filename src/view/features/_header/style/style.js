@@ -14,7 +14,7 @@ const header = props =>
       width: getWidth(),
       alignItems: 'center',
       justifyContent: isIOS() ? 'flex-end' : 'center',
-      borderBottomColor: getColor().text,
+      borderBottomColor: '#999999',
       borderBottomWidth: 0.2
     },
     row: {
