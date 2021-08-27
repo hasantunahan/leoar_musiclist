@@ -3,6 +3,7 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import {getColor} from '../../../../core/app/extension/color';
 import {appBarHeight, getWidth} from '../../../../core/app/extension/dimension';
+import { horizontalPadding } from '../../../../core/app/extension/padding';
 const musicstyle = props =>
   StyleSheet.create({
     main: {
@@ -29,6 +30,10 @@ const musicstyle = props =>
       shadowOpacity: 0.2,
       elevation:10
     },
+    playDetails : {
+      flex :1, 
+      paddingHorizontal : horizontalPadding()
+    }
   });
 function musicStyle() {
   const {colors} = useTheme();
