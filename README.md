@@ -1,5 +1,7 @@
 # Leoar_Musiclist
 
+https://user-images.githubusercontent.com/24542708/131215464-a1a0a8a2-231c-4d5f-bf4c-71404f230560.mov
+
 ## Versions
 
 Instructions on how to use them in your own application are linked below.
@@ -62,8 +64,6 @@ and then :
 ```sh
 npm run ios
 ```
-https://user-images.githubusercontent.com/24542708/131215464-a1a0a8a2-231c-4d5f-bf4c-71404f230560.mov
-
 
 ## Android Phone
 <img align="left" src="screenhot/android1.png" width ="200" height="420" >
