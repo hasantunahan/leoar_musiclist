@@ -7,7 +7,7 @@ Instructions on how to use them in your own application are linked below.
 | Name | Version |
 | ------ | ------ |
 | React | 17.0.2 |
-| React | 0.65.1 |
+| React Native | 0.65.1 |
 | Node | 14.15.4 |
 
 ## Installation
