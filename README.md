@@ -15,7 +15,7 @@ Instructions on how to use them in your own application are linked below.
 Requires [Node.js](https://nodejs.org/) v10+ to run.
 Install the dependencies and devDependencies and start the server.
 
-##For Android
+## For Android
 
 First one : 
 ```sh
@@ -27,7 +27,7 @@ and then :
 npm run android
 ```
 
-##For IOS
+## For IOS
 
 First one : 
 ```sh
