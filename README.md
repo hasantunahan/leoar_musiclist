@@ -57,9 +57,9 @@ npm run ios
 <img  src="screenhot/androidtablet2.png" width ="300" height="520" >
 
 ## IOS Phone
-<img align="left" src="screenhot/android1.png" width ="300" height="660" >
-<img  src="screenhot/android2.png" width ="300" height="660" >
+<img align="left" src="screenhot/ios1.png" width ="300" height="660" >
+<img  src="screenhot/ios2.png" width ="300" height="660" >
 
 ## IOS Tablet
-<img align="left" src="screenhot/androidtablet1.png" width ="400" height="620" >
-<img  src="screenhot/androidtablet2.png" width ="400" height="620" >
+<img align="left" src="screenhot/iostablet1.png" width ="400" height="620" >
+<img  src="screenhot/iostablet2.png" width ="400" height="620" >
