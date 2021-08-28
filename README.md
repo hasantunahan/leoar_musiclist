@@ -12,13 +12,13 @@ Instructions on how to use them in your own application are linked below.
 
 # Used Library
 
-# For Fetch Data Internet
+ For Fetch Data Internet
 | Name | Version |
 | ------ | ------ |
 | axios | 0.21.1 |
 
 
-# For State Management
+ For State Management
 | Name | Version |
 | ------ | ------ |
 | redux | 4.1.0 |
