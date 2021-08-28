@@ -22,7 +22,7 @@ const musicstyle = props =>
     categories: {
       backgroundColor: getColor().card,
       height: appBarHeight(),
-      width: getWidth(),
+      width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
       shadowColor: '#000',

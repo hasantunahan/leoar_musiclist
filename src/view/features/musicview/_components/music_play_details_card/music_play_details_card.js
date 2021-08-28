@@ -2,21 +2,19 @@ import React from 'react';
 import {
   View,
   Text,
-  Image,
-  ScrollView,
-  Touchable,
   TouchableOpacity,
 } from 'react-native';
-import {AppText} from '../../../../../core/app/component/text';
+import { AppText } from '../../../../../core/app/component/text';
 import playDetailsStyle from './style/style';
 import DetailsImage from './_partial_components/details_image';
-const MusicDetailsCard = ({item}) => {
+import { Label } from '../../../../../core/init/lang/en-En';
+const MusicDetailsCard = ({ item }) => {
   const styles = playDetailsStyle();
   return (
     <View style={styles.card}>
       <View style={styles.row}>
         <DetailsImage image={item.thumbUrl} />
-        <View style={{paddingHorizontal: 10, justifyContent: 'center'}}>
+        <View style={styles.cardtext}>
           <AppText style={styles.name} text={item.name} />
           <AppText style={styles.artist} text={item.artistName} />
 
@@ -29,13 +27,8 @@ const MusicDetailsCard = ({item}) => {
       </View>
       <TouchableOpacity>
         <View
-          style={{
-            paddingHorizontal: 15,
-            paddingVertical: 8,
-            borderRadius: 20,
-            backgroundColor: '#f5f5f5',
-          }}>
-          <Text>Choose</Text>
+          style={styles.choose_btn}>
+          <Text>{Label.choose}</Text>
         </View>
       </TouchableOpacity>
     </View>

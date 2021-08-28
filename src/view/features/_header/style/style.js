@@ -11,7 +11,7 @@ const header = props =>
     main: {
       backgroundColor: getColor().card,
       height: appBarHeight(),
-      width: getWidth(),
+      width: '100%',
       alignItems: 'center',
       justifyContent: isIOS() ? 'flex-end' : 'center',
       borderBottomColor: '#999999',
@@ -20,7 +20,7 @@ const header = props =>
     row: {
       flexDirection: 'row',
       padding: normalPadding(),
-      width: getWidth(),
+      width: '100%',
       paddingLeft: 15,
       paddingRight: 15,
       justifyContent: 'space-between',

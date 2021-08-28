@@ -13,14 +13,14 @@ const AppHeader = ({title = APP_NAME}) => {
         <AppTextButton
           textstyle={styles.headerbutton}
           text="Cancel"
-          onPress={() => console.log('ckik')}
+          onPress={() => console.log('cancel')}
           buttonstyle={styles.headerbutton}
         />
         <AppText style={styles.headertitle} text={title ?? ''} />
         <AppTextButton
           textstyle={styles.headerbutton}
           text="Done"
-          onPress={() => console.log('ckik')}
+          onPress={() => console.log('done')}
           buttonstyle={styles.headerbutton}
         />
       </View>

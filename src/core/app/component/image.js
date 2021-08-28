@@ -18,7 +18,7 @@ const AppImageNetwork = ({
         height: height,
         position: position ?? 'relative',
         resizeMode: resizeMode,
-        borderRadius: hiddenBorder ? 0 : 10,
+        borderRadius: hiddenBorder ? 0 : 13,
       }}
     />
   );

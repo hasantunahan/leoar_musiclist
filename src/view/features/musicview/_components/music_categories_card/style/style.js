@@ -1,8 +1,6 @@
 import {useTheme} from '@react-navigation/native';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {getColor} from '../../../../core/app/extension/color';
-import {appBarHeight, getWidth} from '../../../../core/app/extension/dimension';
 const categoriescard = props =>
   StyleSheet.create({
     selected: {
