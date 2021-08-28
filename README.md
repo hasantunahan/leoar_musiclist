@@ -10,6 +10,9 @@ Instructions on how to use them in your own application are linked below.
 | React Native | 0.65.1 |
 | Node | 14.15.4 |
 
+# Used Library
+- For fetch data internet  : axios
+
 ## Installation
 
 Requires [Node.js](https://nodejs.org/) v10+ to run.
