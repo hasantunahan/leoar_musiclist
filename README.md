@@ -47,3 +47,7 @@ and then :
 ```sh
 npm run ios
 ```
+
+## Android Phone & Tablet
+<img align="left" src="screenshot/android1.png" width ="300" height="500" >
+<img src="screenshot/android2.png" width ="300" height="500" >
