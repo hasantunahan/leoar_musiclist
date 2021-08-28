@@ -11,7 +11,7 @@ Instructions on how to use them in your own application are linked below.
 | Node | 14.15.4 |
 
 # Used Library
-- For fetch data internet:  axios | 0.21.1 |
+- For fetch data internet:  axios  ^0.21.1
 
 ## Installation
 
