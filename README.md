@@ -11,10 +11,11 @@ Instructions on how to use them in your own application are linked below.
 | Node | 14.15.4 |
 
 # Used Library
-- For fetch data internet:  "axios" :  ^0.21.1
-- For state management   :  "react-redux": "^7.2.4",
-                            "redux": "^4.1.0",
-                            "redux-thunk": "^2.3.0"
+
+# For State Management
+| redux | 17.0.2 |
+| react-redux | 0.65.1 |
+| redux-thunk | 14.15.4 |
 
 ## Installation
 
