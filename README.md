@@ -55,3 +55,11 @@ npm run ios
 ## Android Tablet
 <img align="left" src="screenhot/androidtablet1.png" width ="300" height="520" >
 <img  src="screenhot/androidtablet2.png" width ="300" height="520" >
+
+## IOS Phone
+<img align="left" src="screenhot/android1.png" width ="300" height="660" >
+<img  src="screenhot/android2.png" width ="300" height="660" >
+
+## IOS Tablet
+<img align="left" src="screenhot/androidtablet1.png" width ="400" height="620" >
+<img  src="screenhot/androidtablet2.png" width ="400" height="620" >
