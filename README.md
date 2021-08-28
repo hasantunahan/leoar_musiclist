@@ -49,5 +49,5 @@ npm run ios
 ```
 
 ## Android Phone & Tablet
-<img align="left" src="screenhot/android1.png" width ="300" height="500" >
-<img src="screenhot/android2.png" width ="300" height="500" >
+<img align="left" src="screenhot/android1.png" width ="200" height="500" >
+<img src="screenhot/android2.png" width ="200" height="500" >
