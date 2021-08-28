@@ -13,9 +13,11 @@ Instructions on how to use them in your own application are linked below.
 # Used Library
 
 # For State Management
-| redux | 17.0.2 |
-| react-redux | 0.65.1 |
-| redux-thunk | 14.15.4 |
+| Name | Version |
+| ------ | ------ |
+| redux | 4.1.0 |
+| react-redux | 7.2.4 |
+| redux-thunk | 2.3.0 |
 
 ## Installation
 
